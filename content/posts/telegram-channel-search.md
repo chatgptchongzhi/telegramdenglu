@@ -364,7 +364,7 @@ Telegram Desktop也支持查找公开频道。
 
 客服微信：ef22055
 
-备注（grok）
+备注（Telegram频道搜索）
 
 如果这篇教程对你有帮助，欢迎[给本项目点一颗小星星⭐️](https://github.com/chatgptchongzhi/telegramdenglu)。
 
