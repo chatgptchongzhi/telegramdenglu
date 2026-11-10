@@ -360,7 +360,7 @@ Telegram Desktop也支持查找公开频道。
 - [Telegram官方：Public Post Search](https://telegram.org/blog/post-search-story-albums-and-more)
 - [Telegram搜索功能技术文档](https://core.telegram.org/api/search)
 
-## 有任何AI注册，充值或使用问题，请联系我们。
+## 有任何 Telegram 频道搜索、加入或使用问题，请联系我们。
 
 客服微信：ef22055
 
