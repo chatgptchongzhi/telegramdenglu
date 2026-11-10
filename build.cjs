@@ -1,0 +1,23 @@
+const fs=require('fs'),path=require('path'),assert=require('assert/strict');
+const {render,esc}=require('./markdown.cjs');
+const base='https://chatgptchongzhi.github.io/telegramdenglu/',root=__dirname;
+const write=(p,s)=>{const f=path.join(root,'_site',p);fs.mkdirSync(path.dirname(f),{recursive:true});fs.writeFileSync(f,s)};
+const posts=fs.readdirSync(path.join(root,'content/posts')).filter(f=>f.endsWith('.md')).map(file=>{
+ const raw=fs.readFileSync(path.join(root,'content/posts',file),'utf8'),match=raw.match(/^---\r?\n([\s\S]+?)\r?\n---\r?\n([\s\S]*)$/);assert(match,'Missing Front Matter: '+file);
+ const p={};for(const l of match[1].split(/\r?\n/)){const i=l.indexOf(':');p[l.slice(0,i)]=JSON.parse(l.slice(i+1).trim())}
+ for(const k of ['title','description','slug','date','updated','category'])assert(p[k],k);assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(p.slug));assert(/^\d{4}-\d{2}-\d{2}$/.test(p.date)&&p.updated>=p.date);assert(!/^# /m.test(match[2]),'H1 is rendered from title');
+ return {...p,file,body:match[2],url:base+'guides/'+p.slug+'/'};
+}).sort((a,b)=>b.date.localeCompare(a.date));assert(new Set(posts.map(p=>p.slug)).size===posts.length,'Duplicate slug');
+function shell(title,desc,url,body,schema){return `<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${url}"><meta property="og:type" content="${schema?'article':'website'}"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(desc)}"><meta property="og:url" content="${url}"><meta property="og:locale" content="zh_CN"><link rel="stylesheet" href="${base}assets/style.css">${schema?'<script type="application/ld+json">'+JSON.stringify(schema).replaceAll('<','\\u003c')+'</script>':''}</head><body><a class="skip" href="#main">跳至正文</a><header><a href="${base}">纸飞机 · Telegram 教程</a><a href="https://github.com/chatgptchongzhi/telegramdenglu">GitHub</a></header>${body}<footer><a href="${base}">教程首页</a> · <a href="${base}sitemap.xml">网站地图</a></footer></body></html>`}
+for(const p of posts){const {out,toc}=render(p.body),links=toc.map(([id,t])=>`<a href="#${id}">${esc(t)}</a>`).join('');
+ const support=out.replace(/(<h2[^>]*>有任何AI注册，充值或使用问题，请联系我们。<\/h2>[\s\S]*)$/,'<section class="support">$1</section>');
+ const html=shell(p.title,p.description,p.url,`<main id="main" class="layout"><article><p class="eyebrow">${esc(p.category)}</p><h1>${esc(p.title)}</h1><p class="meta">发布：<time datetime="${p.date}">${p.date}</time> · 更新：<time datetime="${p.updated}">${p.updated}</time></p><details class="mobile-toc"><summary>文章目录</summary><nav>${links}</nav></details>${support}</article><aside><nav aria-label="文章目录"><strong>文章目录</strong>${links}</nav></aside></main>`,{'@context':'https://schema.org','@type':'BlogPosting',headline:p.title,description:p.description,inLanguage:'zh-CN',datePublished:p.date,dateModified:p.updated,mainEntityOfPage:p.url,url:p.url});
+ assert.equal((html.match(/<h1[ >]/g)||[]).length,1);assert.equal((html.match(/rel="canonical"/g)||[]).length,1);assert(!/noindex/i.test(html));assert(html.includes('ef22055'));assert(html.includes('备注（grok）'));assert(html.includes('FAQ'));assert.equal((html.match(/href="https:\/\/wokee888.shop\/?"/g)||[]).length,1);
+ for(const [id] of toc)assert(html.includes('id="'+id+'"'));write('guides/'+p.slug+'/index.html',html);
+}
+const index=posts.map(({body,...p})=>p);fs.writeFileSync(path.join(root,'content/index.json'),JSON.stringify(index,null,2)+'\n');write('content/index.json',JSON.stringify(index));
+write('index.html',shell('纸飞机 Telegram 中文教程','Telegram登录、注册、频道搜索与常见问题教程。',base,`<main id="main" class="home"><p class="eyebrow">TELEGRAM GUIDES</p><h1>纸飞机 Telegram 中文教程</h1><p>从频道搜索到账号使用，按实际问题查找操作方法。</p>${posts.map(p=>`<section class="card"><p class="meta">${p.date} · ${esc(p.category)}</p><h2><a href="${p.url}">${esc(p.title)}</a></h2><p>${esc(p.description)}</p><a href="${p.url}">阅读教程 →</a></section>`).join('')}</main>`));
+write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>'+base+'</loc><lastmod>'+posts.map(p=>p.updated).sort().at(-1)+'</lastmod></url>'+posts.map(p=>'<url><loc>'+p.url+'</loc><lastmod>'+p.updated+'</lastmod></url>').join('')+'</urlset>');
+write('robots.txt','User-agent: *\nAllow: /\nSitemap: '+base+'sitemap.xml\n');write('.nojekyll','');
+write('assets/style.css',fs.readFileSync(path.join(root,'assets/style.css'),'utf8'));
+console.log('Build and SEO checks passed: '+posts.length+' article(s).');
