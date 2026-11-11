@@ -1,5 +1,15 @@
 [
   {
+    "title": "Telegram提示Too Many Attempts怎么办？多久可以重试？2026年解决方法",
+    "description": "Telegram登录提示Too Many Attempts多久可以重试？了解FLOOD_WAIT等待时间、验证码请求过多、两步验证密码错误及等待24小时仍受限的处理方法。",
+    "slug": "telegram-too-many-attempts",
+    "date": "2026-11-11",
+    "updated": "2026-11-11",
+    "category": "Telegram登录与验证码",
+    "file": "telegram-too-many-attempts.md",
+    "url": "https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-too-many-attempts/"
+  },
+  {
     "title": "纸飞机怎么搜索频道？Telegram中文频道搜索与加入教程",
     "description": "纸飞机怎么搜索频道？本文介绍Telegram苹果、安卓和电脑版搜索中文频道的方法，包括关键词搜索、@用户名、Channels分类、通过t.me链接加入频道，以及Telegram搜索不到频道和私密频道无法搜索的解决方法。",
     "slug": "telegram-channel-search",
@@ -10,3 +20,4 @@
     "url": "https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-channel-search/"
   }
 ]
+
