@@ -11,6 +11,17 @@
     "url": "https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-hong-kong-verification-code/"
   },
   {
+    "title": "Telegram加群后账号被封怎么办？新号群内禁言、Spam限制与冻结排查",
+    "description": "Telegram新号加群后无法发言或账号被封怎么办？区分群内权限、Spam限制、Frozen Account和手机号封禁，查看对应官方复查入口与英文说明模板。",
+    "slug": "telegram-restricted-after-joining-group",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "category": "Telegram群组与账号限制",
+    "supportImage": true,
+    "file": "telegram-restricted-after-joining-group.md",
+    "url": "https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-restricted-after-joining-group/"
+  },
+  {
     "title": "Telegram提示Too Many Attempts怎么办？多久可以重试？2026年解决方法",
     "description": "Telegram登录提示Too Many Attempts多久可以重试？了解FLOOD_WAIT等待时间、验证码请求过多、两步验证密码错误及等待24小时仍受限的处理方法。",
     "slug": "telegram-too-many-attempts",
