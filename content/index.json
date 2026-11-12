@@ -1,5 +1,16 @@
 [
   {
+    "title": "Telegram用香港手机号注册为什么收不到验证码？+852纸飞机注册解决方法",
+    "description": "香港+852手机号注册Telegram收不到验证码怎么办？区分实体SIM卡短信、在中国大陆漫游、Code sent to Telegram和SMS Fee，了解可用验证方式与官方帮助入口。",
+    "slug": "telegram-hong-kong-verification-code",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "category": "Telegram登录与验证码",
+    "supportImage": true,
+    "file": "telegram-hong-kong-verification-code.md",
+    "url": "https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-hong-kong-verification-code/"
+  },
+  {
     "title": "Telegram提示Too Many Attempts怎么办？多久可以重试？2026年解决方法",
     "description": "Telegram登录提示Too Many Attempts多久可以重试？了解FLOOD_WAIT等待时间、验证码请求过多、两步验证密码错误及等待24小时仍受限的处理方法。",
     "slug": "telegram-too-many-attempts",
@@ -20,4 +31,3 @@
     "url": "https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-channel-search/"
   }
 ]
-
