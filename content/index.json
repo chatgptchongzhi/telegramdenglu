@@ -22,6 +22,17 @@
     "url": "https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-restricted-after-joining-group/"
   },
   {
+    "title": "Telegram X和官方Telegram有什么区别？客户端选择与登录验证说明",
+    "description": "Telegram X和普通Telegram有什么区别？了解Android客户端、TDLib、界面功能、账号同步与秘密聊天差异，以及验证码和SMS Fee为何不能靠换客户端保证解决。",
+    "slug": "telegram-x-vs-telegram",
+    "date": "2026-11-12",
+    "updated": "2026-11-12",
+    "category": "Telegram客户端",
+    "supportImage": true,
+    "file": "telegram-x-vs-telegram.md",
+    "url": "https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-x-vs-telegram/"
+  },
+  {
     "title": "Telegram提示Too Many Attempts怎么办？多久可以重试？2026年解决方法",
     "description": "Telegram登录提示Too Many Attempts多久可以重试？了解FLOOD_WAIT等待时间、验证码请求过多、两步验证密码错误及等待24小时仍受限的处理方法。",
     "slug": "telegram-too-many-attempts",
