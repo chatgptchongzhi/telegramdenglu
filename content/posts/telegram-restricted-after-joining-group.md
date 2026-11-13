@@ -1,6 +1,6 @@
 ---
 title: "Telegram加群后账号被封怎么办？新号群内禁言、Spam限制与冻结排查"
-description: "Telegram新号加群后无法发言或账号被封怎么办？区分群内权限、Spam限制、Frozen Account和手机号封禁，包含刚注册未发消息就受限的原因、官方复查入口与英文说明模板。"
+description: "Telegram新号加群后无法发言或账号被封怎么办？区分群内权限、Spam限制、Frozen Account和手机号封禁，补充新号误限制、陌生人私信权限与Stars收费的区别及复查模板。"
 slug: "telegram-restricted-after-joining-group"
 date: "2026-11-12"
 updated: "2026-11-13"
@@ -132,6 +132,42 @@ Thank you for your assistance.
 
 同样，更换IP、切换代理节点、安装Telegram X或购买Premium，都不是官方保证有效的新号解限方法。对于已经存在的账号级别限制，应使用Telegram提供的复查渠道，而不是依靠更换客户端来判断是否解除。
 
+## Telegram为什么不能给陌生人发消息？
+
+Telegram为什么不能给陌生人发消息？如果纸飞机（电报）账号可以正常登录，也能和熟悉的人聊天，但通过用户名搜索到陌生人后却无法发送消息，通常需要检查三种情况：自己的账号是否受到Spam限制、对方是否设置了陌生人私信权限，以及当前聊天是否要求支付Telegram Stars。这些情况都会影响主动私聊，但并不代表账号一定被封禁。
+
+### 已经添加联系人，为什么仍然不能发消息？
+
+如果Telegram提示账号无法向非联系人发送消息，首先需要理解Telegram对联系人的判断方式。受到Spam限制时，官方允许用户联系已经保存自己手机号的人，这与自己单方面把对方添加到通讯录并不完全相同。即使你已经保存了对方的手机号，也不代表对方已经保存你的号码。
+
+例如，你通过Telegram用户名搜索到一个用户，并将对方添加为联系人，但对方从未保存你的手机号。如果自己的账号正受到Spam限制，仍然可能无法主动给这个人发送消息。此时反复删除和添加联系人，通常不能改变账号当前的限制状态。
+
+如果确实需要与对方沟通，可以让对方在愿意的情况下主动联系你。Telegram官方说明，受到这类限制的账号通常仍然可以回复先发来消息的人。不过，这不意味着可以借助其他账号批量联系陌生人，也不代表对方有义务接受未经请求的私信。
+
+### 对方设置Premium私信权限怎么办？
+
+如果SpamBot没有报告当前账号存在垃圾信息限制，但你仍然无法给某个人发送消息，就需要检查对方的接收权限。Telegram允许Premium用户将新聊天权限设置为“My Contacts and Premium Users”，也就是只允许自己的联系人和符合条件的Premium用户主动发起聊天。
+
+当对方开启这一设置后，如果你既不是对方的联系人，也没有符合要求的Premium资格，就可能无法主动开启私聊。这属于接收方设置的权限，并不是你的账号受到处罚。即使通过SpamBot提交申诉，也无法改变对方主动设置的消息接收规则。
+
+如果双方认识，可以请对方在愿意的情况下主动发送消息，或者将你添加到联系人。Telegram官方说明，当对方先主动联系你时，这类新聊天限制通常不会阻止你回复。需要注意的是，对方的隐私设置由对方决定，不能通过更换客户端或代理节点强制解除。
+
+### Telegram私信为什么要求支付Stars？
+
+Telegram在2025年推出了Star Messages功能，允许符合条件的用户对非联系人的私信设置Telegram Stars费用。如果打开某个聊天窗口时，页面明确显示发送消息需要支付一定数量的Stars，那么问题通常不是账号被封，而是对方开启了付费消息功能。
+
+Telegram Stars属于平台内的数字支付单位。接收方可以根据自己的设置决定陌生人发送消息需要支付多少Stars，部分联系人或符合条件的用户可能获得免费发送权限。Telegram官方还说明，接收者在回复后可以选择退还相关费用，但是否退款由接收者决定，并不是发送消息后一定会自动退还。
+
+如果不想支付Stars，可以等待对方主动联系，或者在双方认识的情况下，请对方将你加入联系人。对于不认识的用户，应尊重对方设置的消息权限。购买Telegram Premium也不代表可以免费发送所有付费私信，因为Premium订阅与Star Messages收费属于不同机制。
+
+### 只有一个人无法联系，是被拉黑了吗？
+
+如果Telegram可以正常联系其他用户，只有某一个人的消息无法发送，除了隐私权限和Stars收费，还需要考虑是否被对方拉黑。Telegram允许用户屏蔽不希望联系自己的人，被屏蔽后，发送方可能无法正常与对方建立联系。
+
+不过，Telegram不会向发送方直接提供一个可靠的“你已被拉黑”状态标识。仅凭对方长期不回复、头像变化或者最后上线时间不可见，不能准确判断自己是否被拉黑，因为这些现象也可能由隐私设置造成。
+
+如果双方原本认识，可以通过双方已经同意使用的其他联系方式确认是否方便继续沟通。如果对方明确表示不希望被联系，就不应该通过其他Telegram账号继续发送消息。对于陌生用户，也没有必要反复测试对方是否屏蔽了自己。
+
 ## Telegram加群后受限常见问题FAQ
 
 ### 为什么刚加入一个群就受到限制？
@@ -190,19 +226,23 @@ Telegram官方支持：[https://telegram.org/support](https://telegram.org/suppo
 
 [Telegram官方群组反垃圾信息说明](https://telegram.org/blog/ultimate-privacy-topics-2-0#aggressive-anti-spam)
 
+[Telegram Premium新聊天权限官方说明](https://telegram.org/blog/new-saved-messages-and-9-more)
+
+[Telegram Stars付费消息官方说明](https://telegram.org/blog/star-messages-gateway-2-0-and-more)
+
 ## 相关教程
 
 [Telegram封号、冻结与Spam限制申诉入口及模板](https://chatgptchongzhi.github.io/chatgpt-plus-guide/guides/telegram-account-ban-appeal/)
 
 [登录提示Too Many Attempts的处理方法](https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-too-many-attempts/)
 
-## 有任何Telegram新号受限、加群后限制或群内发言问题，请联系我们。
+## 有任何Telegram新号受限、陌生人私信或群内发言问题，请联系我们。
 
 客服微信：ef22055
 
-备注（Telegram新号注册及加群后受限）
+备注（Telegram新号受限与陌生人私信）
 
-如需了解新号注册后受限、群内权限与账号限制的区别，可查看店铺当前咨询服务说明。是否解除平台限制由Telegram审核决定，不保证解封。
+如需了解新号受限、陌生人私信权限、Stars收费与群内禁言的区别，可查看店铺当前咨询服务说明。是否解除平台限制由Telegram审核决定，不保证解封；咨询不能绕过对方隐私设置或Stars收费。
 
 如果教程对你有帮助，欢迎[给本项目点一颗小星星⭐️](https://github.com/chatgptchongzhi/telegramdenglu)。
 
