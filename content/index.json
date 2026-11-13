@@ -1,5 +1,16 @@
 [
   {
+    "title": "Telegram旧版登录为什么提示验证码发送到其他设备？纸飞机老号登录解决方法",
+    "description": "Telegram旧版提示验证码发送到其他设备怎么办？了解Code sent to Telegram验证码位置、旧设备退出后的验证选项、Passkey使用条件，以及Telegram X和旧版客户端的登录限制。",
+    "slug": "telegram-code-other-device",
+    "date": "2026-11-13",
+    "updated": "2026-11-13",
+    "category": "Telegram登录与验证码",
+    "supportImage": true,
+    "file": "telegram-code-other-device.md",
+    "url": "https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-code-other-device/"
+  },
+  {
     "title": "Telegram用香港手机号注册为什么收不到验证码？+852纸飞机注册解决方法",
     "description": "香港+852手机号注册Telegram收不到验证码怎么办？区分实体SIM卡短信、在中国大陆漫游、Code sent to Telegram和SMS Fee，了解可用验证方式与官方帮助入口。",
     "slug": "telegram-hong-kong-verification-code",
