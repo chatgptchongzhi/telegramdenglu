@@ -42,6 +42,33 @@ Telegram官方说明，受到反垃圾信息限制的账号仍然可以回复先
 
 如果Telegram已经确认账号存在垃圾信息违规，SpamBot不能保证提前解除限制。官方说明，部分首次限制可能持续几天，但没有统一的恢复期限，重复违规还可能导致更长时间的限制。
 
+### Telegram双向限制是什么，怎么解除？
+
+需要注意，Telegram双向限制并不等于手机号被封禁，也不代表账号已经无法使用。部分受限账号仍然可以正常接收消息、回复别人，以及联系已经保存自己手机号的用户。Telegram官方将这种情况归入垃圾信息限制，而“双向限制”主要是中文用户对相关私信权限问题的习惯称呼。下面介绍具体的查询和申诉方法，以及限制多久能够恢复。
+
+### 普通Spam误限制的英文复查模板
+
+如果SpamBot提供填写申诉理由的入口，可以直接使用下面的英文模板。内容重点说明当前账号受到什么限制，以及希望官方重新检查是否存在误判。英文不需要复杂，也不需要反复强调账号的重要性，更不要编造不存在的使用经历。
+Hello Telegram Support,
+
+My Telegram account is currently restricted from sending messages to people who are not in my contacts. I believe this restriction may have been applied by mistake.
+
+I would appreciate it if you could review my account and check whether the limitation can be removed. I understand Telegram's anti-spam policies and will make sure my future messages are welcome by their recipients.
+
+Thank you for your time and assistance.
+
+这份模板适合认为自己被误判的普通用户。如果账号确实曾经连续向陌生人发送广告、群组邀请或其他未经请求的推广信息，就不应该声称自己完全没有发送过相关消息。Telegram官方明确表示，对于已经确认的垃圾信息违规，不能保证提前解除限制，因此真实说明情况比反复提交相同申诉更有意义。
+
+对于刚注册就受到限制的新账号，可以在模板中补充实际注册时间，并说明此前是否使用过该手机号。Telegram官方承认，部分号码可能因为前任持有人的使用记录，或者号码属于某些虚拟号码、VoIP号码类型，而受到过于严格的限制。如果确实属于这种情况，可以通过SpamBot如实说明，请求官方复查，但不能保证申诉一定成功。
+
+### 通过SpamBot申诉后没有回复怎么办？
+
+如果已经通过SpamBot提交申诉，但账号仍然无法主动联系陌生人，首先应查看机器人是否提供新的审核结果或限制状态。如果没有收到明确回复，也不能直接认定账号已经永久受限，因为Telegram没有为所有Spam申诉公布固定审核期限。
+
+对于已经确认的垃圾信息限制，Telegram官方说明不能保证提前解除。短时间大量发送重复申诉，也没有证据表明能够提高处理优先级。如果限制属于临时措施，通常需要等待平台规定的期限结束；如果认为确实存在误判，则应通过SpamBot提供的官方流程反馈真实情况。
+
+在限制期间，账号仍然可能保留部分正常聊天功能。例如，用户可以回复主动联系自己的人，也可以向已经保存自己手机号的联系人发送消息。需要注意的是，这些功能并不意味着可以继续批量发送未经请求的推广信息，否则可能再次触发举报并导致更长时间的限制。
+
 ## 加群后出现Frozen Account怎么办？
 
 如果账号加入群组后出现Frozen Account提示，或者突然只能查看聊天记录，无法发送消息、发布内容，就可能属于Telegram的账号冻结机制。这与普通Spam限制不同，因为冻结账号可能失去更广泛的发送权限。
@@ -236,13 +263,13 @@ Telegram官方支持：[https://telegram.org/support](https://telegram.org/suppo
 
 [登录提示Too Many Attempts的处理方法](https://chatgptchongzhi.github.io/telegramdenglu/guides/telegram-too-many-attempts/)
 
-## 有任何Telegram新号受限、陌生人私信或群内发言问题，请联系我们。
+## 有任何Telegram双向限制、陌生人私信或群内发言问题，请联系我们。
 
 客服微信：ef22055
 
-备注（Telegram新号受限与陌生人私信）
+备注（Telegram双向限制与SpamBot复查）
 
-如需了解新号受限、陌生人私信权限、Stars收费与群内禁言的区别，可查看店铺当前咨询服务说明。是否解除平台限制由Telegram审核决定，不保证解封；咨询不能绕过对方隐私设置或Stars收费。
+如需了解双向限制、SpamBot复查、陌生人私信权限与群内禁言的区别，可查看店铺当前咨询服务说明。是否解除平台限制由Telegram审核决定，不保证解封；咨询不能绕过对方隐私设置或Stars收费。
 
 如果教程对你有帮助，欢迎[给本项目点一颗小星星⭐️](https://github.com/chatgptchongzhi/telegramdenglu)。
 
